@@ -1,0 +1,14 @@
+model:
+  name: "UNet_cGAN"
+  in_channels: 8  # 2*3 RGB images + 2 pose maps + 2 size maps
+  out_channels: 3
+train:
+  batch_size: 8
+  epochs: 100
+  learning_rate: 2e-4
+  lambda_l1: 100
+  lambda_coord: 10
+paths:
+  data_root: "./data"
+  checkpoints: "./outputs/checkpoints"
+  logs: "./outputs/logs"

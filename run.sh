@@ -6,6 +6,9 @@ if [ "$action" = "train" ]; then
 elif [ "$action" = "eval" ]; then
   echo "Evaluating the model..."
   python scripts/eval.py --config configs/default.yaml
+elif [ "$action" = "demo" ]; then
+  echo "Running demo..."
+  python scripts/demo.py --config configs/default.yaml
 else
-  echo "Invalid action. Use 'train', 'eval', or 'test'."
+  echo "Invalid action. Use 'train', 'eval', or 'demo'."
 fi
