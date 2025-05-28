@@ -1,7 +1,7 @@
 model:
   name: "UNet_cGAN"
-  in_channels: 8  # 2*3 RGB images + 2 pose maps + 2 size maps
-  out_channels: 3
+  in_channels: 6  # 3 RGB image + 3 (x, y, θ)
+  out_channels: 3  # 3 RGB images
 train:
   batch_size: 8
   epochs: 100
