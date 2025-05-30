@@ -16,20 +16,7 @@ To solve this problem, a model that generates a reliable ref image based on the 
 
 ## Usage
 
-See the demo
-
 ```bash
 # ~/B2R-GAN/
-bash run.sh demo
-```
-
-Train and eval your own
-
-```bash
-bash run.sh train
-```
-
-```bash
-# ~/B2R-GAN/
-bash run.sh eval
+bash run.sh
 ```

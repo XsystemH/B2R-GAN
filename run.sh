@@ -10,5 +10,5 @@ elif [ "$action" = "demo" ]; then
   echo "Running demo..."
   python scripts/demo.py --config configs/default.yaml
 else
-  echo "Invalid action. Use 'train', 'eval', or 'demo'."
+  python scripts/train.py
 fi
